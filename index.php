@@ -1,15 +1,10 @@
 <?php
-
-function fact($x) 
-{
-    $return = 1;
-    for ($i=2; $i <= $x; $i++) {
-        $return = gmp_mul($return, $i);
-    }
-    return $return;
+function Factoriel($n) {
+ return $n > 1 ? $n * Factoriel($n-1):1;
 }
-
-echo gmp_strval(fact(100000)) . "\n";
-
-echo date('l jS \of F Y h:i:s A');
+ 
+echo "Liste des 16 premiers factoriels entiers:<BR>";
+for($I=0;$I<=10000;$I++) {
+ echo $I."! est ".Factoriel($I)."<BR>";
+}
 ?>
