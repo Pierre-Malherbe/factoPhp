@@ -1,7 +1,5 @@
 <?php
 
-echo date('l jS \of F Y h:i:s A');
-
 function fact($x) 
 {
     $return = 1;
